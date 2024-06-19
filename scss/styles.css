@@ -1,0 +1,567 @@
+* {
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: rgb(77, 77, 77);
+}
+
+.nav {
+  background-color: rgb(77, 77, 77);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.navbar {
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  position: fixed;
+  padding: 0;
+  height: 10vh;
+  width: 100%;
+  background-color: rgb(77, 77, 77);
+}
+.navbar li {
+  display: inline-block;
+  margin: 1vh;
+}
+.navbar li a {
+  display: block;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+  font-size: 2.5vh;
+  margin-top: 2vh;
+}
+.navbar li a:hover {
+  background-color: purple;
+  color: white;
+}
+
+.navbar:hover {
+  transform: scale(1.1);
+  transition: transform 2s ease;
+}
+
+.banner {
+  height: 100vh;
+  background-color: #f8bcec;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-width: 0;
+  margin-bottom: 20vh;
+}
+.banner h1 {
+  color: rgb(77, 77, 77);
+  font-size: 7vh;
+}
+.banner img {
+  width: 15vw;
+  height: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .banner {
+    height: 100vh;
+  }
+  .banner img {
+    width: 30vw;
+    height: auto;
+  }
+  .about article p {
+    font-size: 2vh;
+  }
+  .about img {
+    width: 30vw;
+    height: auto;
+    border-radius: 1rem;
+  }
+  .talk {
+    background-color: #f8bcec;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5vh;
+    border-radius: 5px;
+    color: rgb(77, 77, 77);
+  }
+  .talk h1 {
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 5vh;
+  }
+  .talk article {
+    margin: 2vh;
+    font-family: "Roboto", sans-serif;
+    padding: 1vh;
+  }
+  .talk article p {
+    font-size: 2vh;
+  }
+  .talk article img {
+    width: 30vw;
+    height: auto;
+    float: center;
+  }
+}
+body {
+  background-color: rgb(77, 77, 77);
+  margin: 0;
+  justify-content: center;
+}
+
+.about {
+  margin-top: 30vh;
+  padding-top: 3vh;
+}
+.about h1 {
+  font-size: 5vh;
+  color: rgb(77, 77, 77);
+  margin-top: 5vh;
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.section1 {
+  margin-top: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  margin: 5vh;
+  height: 150vh;
+  background-color: #f8bcec;
+  border-radius: 5px;
+}
+.section1 article {
+  color: rgb(77, 77, 77);
+  font-family: "Roboto", sans-serif;
+  font-size: 3vh;
+  margin: 5vh;
+  text-justify: inter-word;
+  line-height: 1.6;
+}
+
+.section1:hover {
+  transform: scale(1.05);
+  transition: transform 1s ease;
+}
+
+.progress-container {
+  padding-top: 6vh;
+  margin-top: 50%;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.talk {
+  background-color: #f8bcec;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 5vh;
+  border-radius: 5px;
+  color: rgb(77, 77, 77);
+}
+.talk h1 {
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 5vh;
+}
+.talk article {
+  margin: 2vh;
+  font-family: "Roboto", sans-serif;
+  font-size: 10vh;
+  padding: 1vh;
+}
+.talk article p {
+  font-size: 3vh;
+}
+.talk article img {
+  width: 20vw;
+  height: auto;
+  float: center;
+}
+
+.Rust, .progress-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress-bar {
+  background-color: #f8bcec;
+  border-radius: 3rem;
+}
+.progress-bar p {
+  font-size: 2vh;
+  font-family: "Roboto", sans-serif;
+  color: rgb(77, 77, 77);
+}
+
+.text {
+  width: 100%;
+}
+.text h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5vh;
+  font-family: "Roboto", sans-serif;
+  color: #f8bcec;
+}
+
+@keyframes bam1 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 40%;
+  }
+}
+.progress-bar.in-view {
+  animation: bam1 2s ease forwards;
+}
+
+.Rust1, .progress-bar1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress-bar1 {
+  background-color: #f8bcec;
+  border-radius: 3rem;
+}
+.progress-bar1 p {
+  font-size: 2vh;
+  font-family: "Roboto", sans-serif;
+  color: rgb(77, 77, 77);
+}
+
+.text1 {
+  width: 100%;
+}
+.text1 h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5vh;
+  font-family: "Roboto", sans-serif;
+  color: #f8bcec;
+}
+
+@keyframes bim2 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 30%;
+  }
+}
+.progress-bar1.in-view {
+  animation: bim2 2s ease forwards;
+}
+
+.Rust2, .progress-bar2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress-bar2 {
+  background-color: #f8bcec;
+  border-radius: 3rem;
+}
+.progress-bar2 p {
+  font-size: 2vh;
+  font-family: "Roboto", sans-serif;
+  color: rgb(77, 77, 77);
+}
+
+.text2 {
+  width: 100%;
+}
+.text2 h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5vh;
+  font-family: "Roboto", sans-serif;
+  color: #f8bcec;
+}
+
+@keyframes bom3 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 20%;
+  }
+}
+.progress-bar2.in-view {
+  animation: bom3 2s ease forwards;
+}
+
+.Rust3, .progress-bar3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress-bar3 {
+  background-color: #f8bcec;
+  border-radius: 3rem;
+}
+.progress-bar3 p {
+  font-size: 2vh;
+  font-family: "Roboto", sans-serif;
+  color: rgb(77, 77, 77);
+}
+
+.text3 {
+  width: 100%;
+}
+.text3 h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5vh;
+  font-family: "Roboto", sans-serif;
+  color: #f8bcec;
+}
+
+@keyframes bam4 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 40%;
+  }
+}
+.progress-bar3.in-view {
+  animation: bam4 2s ease forwards;
+}
+
+.Rust4, .progress-bar4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress-bar4 {
+  background-color: #f8bcec;
+  border-radius: 3rem;
+}
+.progress-bar4 p {
+  font-size: 2vh;
+  font-family: "Roboto", sans-serif;
+  color: rgb(77, 77, 77);
+}
+
+.text4 {
+  width: 100%;
+}
+.text4 h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5vh;
+  font-family: "Roboto", sans-serif;
+  color: #f8bcec;
+}
+
+@keyframes bim5 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 30%;
+  }
+}
+.progress-bar4.in-view {
+  animation: bim5 2s ease forwards;
+}
+
+.Rust5, .progress-bar5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress-bar5 {
+  background-color: #f8bcec;
+  border-radius: 3rem;
+}
+.progress-bar5 p {
+  font-size: 2vh;
+  font-family: "Roboto", sans-serif;
+  color: rgb(77, 77, 77);
+}
+
+.text5 {
+  width: 100%;
+}
+.text5 h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5vh;
+  font-family: "Roboto", sans-serif;
+  color: #f8bcec;
+}
+
+@keyframes bom6 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 20%;
+  }
+}
+.progress-bar5.in-view {
+  animation: bom6 2s ease forwards;
+}
+
+.Rust6, .progress-bar6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress-bar6 {
+  background-color: #f8bcec;
+  border-radius: 3rem;
+}
+.progress-bar6 p {
+  font-size: 2vh;
+  font-family: "Roboto", sans-serif;
+  color: rgb(77, 77, 77);
+}
+
+.text4 {
+  width: 100%;
+}
+.text4 h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5vh;
+  font-family: "Roboto", sans-serif;
+  color: #f8bcec;
+}
+
+@keyframes bim7 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 30%;
+  }
+}
+.progress-bar6.in-view {
+  animation: bim7 2s ease forwards;
+}
+
+.Rust7, .progress-bar7 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress-bar7 {
+  background-color: #f8bcec;
+  border-radius: 3rem;
+}
+.progress-bar7 p {
+  font-size: 2vh;
+  font-family: "Roboto", sans-serif;
+  color: rgb(77, 77, 77);
+}
+
+.text5 {
+  width: 100%;
+}
+.text5 h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5vh;
+  font-family: "Roboto", sans-serif;
+  color: #f8bcec;
+}
+
+@keyframes bom8 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 20%;
+  }
+}
+.progress-bar7.in-view {
+  animation: bom8 2s ease forwards;
+}
+
+footer {
+  margin-top: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+footer .contact {
+  background-color: #f8bcec;
+  height: 90vh;
+  font-size: 2vh;
+  padding-top: 11vh;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10vh;
+}
+footer .contact h1 {
+  margin-top: 5vh;
+  font-size: 5vh;
+  color: rgb(77, 77, 77);
+  font-family: "Roboto", sans-serif;
+}
+footer .contact li {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+footer .contact li a {
+  margin-top: 2vh;
+  color: rgb(77, 77, 77);
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
+footer .contact li a:hover {
+  scale: 1.1;
+}
+footer .contact li img {
+  width: auto;
+  height: 10vh;
+}/*# sourceMappingURL=styles.css.map */
