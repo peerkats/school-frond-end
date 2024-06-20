@@ -31,3 +31,12 @@ progressbar('.progress-bar4', 'progress4', 50);
 progressbar('.progress-bar5', 'progress5', 50);
 progressbar('.progress-bar6', 'progress6', 50);
 progressbar('.progress-bar7', 'progress7', 50);
+
+
+function openForm() {
+    document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+}

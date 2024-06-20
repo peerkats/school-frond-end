@@ -71,6 +71,61 @@ header {
 }
 
 @media screen and (max-width: 600px) {
+  .form {
+    display: flex;
+    justify-content: center;
+  }
+  .form form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vh;
+    background-color: #f8bcec;
+    width: 50vw;
+    height: 60vh;
+    border-radius: 1rem;
+  }
+  .form form label {
+    margin-top: 1vh;
+    font-size: 2vh;
+    color: #f8bcec;
+    font-family: "Roboto", sans-serif;
+  }
+  .form form #name, .form form #email {
+    width: 25vw;
+    height: 5vh;
+    margin-top: 2vh;
+    border-radius: 5px;
+    border: 1px solid rgb(77, 77, 77);
+    font-family: "Roboto", sans-serif;
+    font-size: 2vh;
+  }
+  .form form textarea {
+    width: 25vw;
+    height: 20vh;
+    margin-top: 2vh;
+    border-radius: 5px;
+    border: 1px solid rgb(77, 77, 77);
+    font-family: "Roboto", sans-serif;
+    font-size: 2vh;
+  }
+  .form form button {
+    width: 10vh;
+    background-color: #f8bcec;
+    color: rgb(77, 77, 77);
+    border: none;
+    padding: 1vh 2vh;
+    font-size: 1.3vh;
+    border-radius: 5px;
+    margin-top: 4vh;
+    margin-top: 1vh;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .form form button:hover {
+    background-color: #343434;
+  }
   .banner {
     height: 100vh;
   }
@@ -527,6 +582,8 @@ body {
 }
 
 footer {
+  display: flex;
+  justify-content: center;
   margin-top: 100vh;
   display: flex;
   flex-direction: column;
@@ -534,12 +591,13 @@ footer {
 }
 footer .contact {
   background-color: #f8bcec;
-  height: 90vh;
+  height: 150vh;
   font-size: 2vh;
   padding-top: 11vh;
   display: flex;
   flex-direction: column;
   margin-top: 10vh;
+  justify-content: center;
 }
 footer .contact h1 {
   margin-top: 5vh;
@@ -564,4 +622,81 @@ footer .contact li a:hover {
 footer .contact li img {
   width: auto;
   height: 10vh;
+}
+footer .contact form {
+  display: flex;
+  justify-content: center;
+}
+footer .contact .open {
+  display: flex;
+  width: 15vh;
+  background-color: rgb(77, 77, 77);
+  color: #f8bcec;
+  border: none;
+  padding: 1vh 2vh;
+  font-size: 1.3vh;
+  border-radius: 5px;
+  margin-top: 5vh;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+footer .contact .open:hover {
+  background-color: #343434;
+}
+footer .contact .form {
+  display: flex;
+  justify-content: center;
+}
+footer .contact .form form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5vh;
+  background-color: rgb(77, 77, 77);
+  width: 30vw;
+  height: 60vh;
+  margin-left: 35vw;
+  border-radius: 1rem;
+}
+footer .contact .form form label {
+  margin-top: 1vh;
+  font-size: 2vh;
+  color: #f8bcec;
+  font-family: "Roboto", sans-serif;
+}
+footer .contact .form form #name, footer .contact .form form #email {
+  width: 25vw;
+  height: 5vh;
+  margin-top: 2vh;
+  border-radius: 5px;
+  border: 1px solid rgb(77, 77, 77);
+  font-family: "Roboto", sans-serif;
+  font-size: 2vh;
+}
+footer .contact .form form textarea {
+  width: 25vw;
+  height: 20vh;
+  margin-top: 2vh;
+  border-radius: 5px;
+  border: 1px solid rgb(77, 77, 77);
+  font-family: "Roboto", sans-serif;
+  font-size: 2vh;
+}
+footer .contact .form form button {
+  width: 15vh;
+  background-color: #f8bcec;
+  color: rgb(77, 77, 77);
+  border: none;
+  padding: 1vh 2vh;
+  font-size: 1.3vh;
+  border-radius: 5px;
+  margin-top: 4vh;
+  margin-top: 1vh;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+footer .contact .form form button:hover {
+  background-color: #343434;
 }/*# sourceMappingURL=styles.css.map */
