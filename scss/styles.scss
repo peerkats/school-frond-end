@@ -102,66 +102,7 @@ header{
 
 
 @media screen and (max-width: 600px) {
-    .form{
-        display: flex;
-        justify-content: center;
-        form {
 
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            align-items: center;
-            margin-top: 5vh;
-            background-color: $purple-bright2;
-            width: 50vw;
-            height: 60vh;
-
-            border-radius: 1rem;
-            label{
-                margin-top: 1vh;
-                font-size: 2vh;
-                color: $purple-bright2;
-                font-family: 'Roboto', sans-serif;
-            }
-            #name, #email{
-                width: 25vw;
-                height: 5vh;
-                margin-top: 2vh;
-                border-radius: 5px;
-                border: 1px solid $grey2;
-                font-family: 'Roboto', sans-serif;
-                font-size: 2vh;
-                
-            }
-            textarea{
-                width: 25vw;
-                height: 20vh;
-                margin-top: 2vh;
-                border-radius: 5px;
-                border: 1px solid $grey2;
-                font-family: 'Roboto', sans-serif;
-                font-size: 2vh;
-            }
-            button{
-                width: 10vh;
-                background-color: $purple-bright2;
-                color: $grey2;
-                border: none;
-                padding: 1vh 2vh;
-                font-size: 1.3vh;
-                border-radius: 5px;
-                margin-top: 4vh;
-                margin-top: 1vh;
-                cursor: pointer;
-                transition: background-color 0.3s ease;
-                
-                &:hover {
-                background-color: darken($grey2, 10%);
-                }
-            }
-
-        }
-    }
     .banner{
         height: 100vh;
         img{
@@ -217,6 +158,55 @@ header{
 
         
     
+    }
+    footer{
+        .form{
+            
+            form{
+                width: 80vw;
+                height: 60vh;
+                margin-left: 10vw;
+                label{
+                    font-size: 2vh;
+                }
+                #name, #email{
+                    width: 70vw;
+                    height: 5vh;
+                    margin-top: 2vh;
+                    border-radius: 5px;
+                    border: 1px solid $grey2;
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 2vh;
+                    
+                }
+                textarea{
+                    width: 70vw;
+                    height: 20vh;
+                    margin-top: 2vh;
+                    border-radius: 5px;
+                    border: 1px solid $grey2;
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 2vh;
+                }
+                button{
+                    width: 15vw;
+                    background-color: $purple-bright2;
+                    color: $grey2;
+                    border: none;
+                    padding: 1vh 2vh;
+                    font-size: 1.3vh;
+                    border-radius: 5px;
+                    margin-top: 4vh;
+                    margin-top: 1vh;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease;
+                    
+                    &:hover {
+                    background-color: darken($grey2, 10%);
+                    }
+                }
+            }
+        }
     }
   
 }
